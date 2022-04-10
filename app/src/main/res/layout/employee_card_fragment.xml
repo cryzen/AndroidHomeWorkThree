@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/user_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:contentDescription="@string/user_avatar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avatar"
+        app:layout_constraintBottom_toTopOf="@+id/caption_full_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toEndOf="@+id/vk_icon"
+        app:layout_constraintTop_toBottomOf="@+id/social_media"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/caption_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/user_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/caption_full_name_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_avatar" />
+
+    <ImageButton
+        android:id="@+id/arrow"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/caption_achievement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/caption_position"
+        app:layout_constraintTop_toBottomOf="@+id/user_avatar"
+        app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+    <TextView
+        android:id="@+id/caption_position"
+        android:layout_width="321dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:lines="2"
+        android:text="@string/caption_position_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/caption_position"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caption_full_name" />
+
+    <TextView
+        android:id="@+id/user_description"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/user_description"
+        android:textSize="@dimen/description_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caption_position" />
+
+    <TextView
+        android:id="@+id/caption_achievements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/caption_achievements"
+        android:textColor="@color/black"
+        android:textSize="@dimen/caption_position"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_description" />
+
+    <ImageView
+        android:id="@+id/user_achievement_header"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/achievement_one"
+        android:src="@drawable/achievement1"
+        app:layout_constraintEnd_toStartOf="@+id/user_achievement_body1"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caption_achievements" />
+
+    <ImageView
+        android:id="@+id/user_achievement_body1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/achievement_one"
+        android:src="@drawable/achievement2"
+        app:layout_constraintEnd_toStartOf="@id/user_achievement_body2"
+        app:layout_constraintStart_toEndOf="@id/user_achievement_header"
+        app:layout_constraintTop_toTopOf="@id/user_achievement_header" />
+
+    <ImageView
+        android:id="@+id/user_achievement_body2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/achievement_one"
+        android:src="@drawable/achievement3"
+        app:layout_constraintEnd_toStartOf="@id/user_achievement_tail"
+        app:layout_constraintStart_toEndOf="@id/user_achievement_body1"
+        app:layout_constraintTop_toTopOf="@id/user_achievement_header" />
+
+    <ImageView
+        android:id="@+id/user_achievement_tail"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/achievement_one"
+        android:src="@drawable/achievement4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/user_achievement_body2"
+        app:layout_constraintTop_toTopOf="@id/user_achievement_header" />
+
+    <ImageButton
+        android:id="@+id/arrow2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="48dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/arrow_description"
+        app:layout_constraintBottom_toTopOf="@+id/user_achievement_tail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/caption_achievements"
+        app:layout_constraintTop_toBottomOf="@+id/arrow"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+    <TextView
+        android:id="@+id/contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/contacts"
+        android:textColor="@color/black"
+        android:textSize="@dimen/caption_position"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_achievement_header"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/phone_number"
+        android:textSize="@dimen/description_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contacts"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/social_media"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/caption_social_media"
+        android:textColor="@color/black"
+        android:textSize="@dimen/caption_position"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number" />
+
+    <ImageView
+        android:id="@+id/vk_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="6dp"
+        android:contentDescription="@string/social_media"
+        android:src="@drawable/vk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/social_media"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

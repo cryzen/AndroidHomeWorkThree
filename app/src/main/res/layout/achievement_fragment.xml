@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints">
+
+    <TextView
+        android:id="@+id/caption_achievement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/caption_achievement"
+        android:textSize="@dimen/caption_position"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/achievement_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.409" />
+
+    <ImageView
+        android:id="@+id/achievement_one"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/achievement_one"
+        android:src="@drawable/achievement1" />
+
+    <ImageView
+        android:id="@+id/achievement_two"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/achievement_two"
+        android:src="@drawable/achievement2" />
+
+    <ImageView
+        android:id="@+id/achievement_three"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/achievement_three"
+        android:src="@drawable/achievement3" />
+
+    <ImageView
+        android:id="@+id/achievement_four"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/achievement_four"
+        android:src="@drawable/achievement4" />
+
+    <ImageView
+        android:id="@+id/achievement_five"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/achievement_five"
+        android:src="@drawable/achievement5" />
+
+    <ImageView
+        android:id="@+id/achievement_six"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/achievement_six"
+        android:src="@drawable/achievement6" />
+
+    <ImageView
+        android:id="@+id/achievement_seven"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/achievement_seven"
+        android:src="@drawable/achievement7" />
+
+    <ImageView
+        android:id="@+id/achievement_eight"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/achievement_eight"
+        android:src="@drawable/achievement8" />
+
+    <ImageView
+        android:id="@+id/achievement_nine"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/achievement_nine"
+        android:src="@drawable/achievement9" />
+
+    <ImageView
+        android:id="@+id/achievement_ten"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/achievement_ten"
+        android:src="@drawable/achievement10" />
+
+    <ImageView
+        android:id="@+id/achievement_eleven"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/achievement_eleven"
+        android:src="@drawable/achievement11" />
+
+    <ImageView
+        android:id="@+id/achievement_twelve"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/achievement_twelve"
+        android:src="@drawable/achievement12" />
+
+    <ImageView
+        android:id="@+id/achievement_thirteen"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/achievement_thirteen"
+        android:src="@drawable/achievement13" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:layout_width="342dp"
+        android:layout_height="317dp"
+        android:layout_marginTop="80dp"
+        app:constraint_referenced_ids="achievement_one, achievement_two, achievement_three, achievement_four, achievement_five, achievement_six, achievement_seven, achievement_eight, achievement_nine, achievement_ten, achievement_eleven, achievement_twelve, achievement_thirteen"
+        app:flow_horizontalGap="6dp"
+        app:flow_verticalGap="6dp"
+        app:flow_wrapMode="aligned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">AndroidHomeWorkThree</string>
+    <string name="user_avatar">User avatar</string>
+    <string name="user_name">Смурыгин Роман Ильич</string>
+    <string name="user_seniority">Работает</string>
+    <string name="user_seniority_count">4 года</string>
+    <string name="caption_position_name">Ведущий инженер-программист (3 категории, моб.)</string>
+    <string name="user_description">Разработка/Розница, Presto и Салон красоты/Мобильные розница, Presto и Склад/Мобильная розница и Presto/менеджер продукта: Карасев И./Розница Android</string>
+    <string name="caption_achievements">Достижения</string>
+    <string name="achievement_one">Достижение 1</string>
+    <string name="achievement_two">Достижение 2</string>
+    <string name="achievement_three">Достижение 3</string>
+    <string name="achievement_four">Достижение 4</string>
+    <string name="achievement_five">Достижение 5</string>
+    <string name="achievement_six">Достижение 6</string>
+    <string name="achievement_seven">Достижение 7</string>
+    <string name="achievement_eight">Достижение 8</string>
+    <string name="achievement_nine">Достижение 9</string>
+    <string name="achievement_ten">Достижение 10</string>
+    <string name="achievement_eleven">Достижение 11</string>
+    <string name="achievement_twelve">Достижение 12</string>
+    <string name="achievement_thirteen">Достижение 13</string>
+    <string name="contacts">Контакты</string>
+    <string name="phone_number">Телефонный номер: +79997860574</string>
+    <string name="social_media">Вконтакте</string>
+    <string name="arrow_description">Полное описание</string>
+    <string name="arrow2_description">Все достижения</string>
+    <string name="caption_achievement">Все достижения</string>
+    <string name="caption_social_media">Соц. сети</string>
+</resources>
