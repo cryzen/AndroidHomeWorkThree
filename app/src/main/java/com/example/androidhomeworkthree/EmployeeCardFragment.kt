@@ -48,9 +48,7 @@ class EmployeeCardFragment : Fragment() {
         }
 
         view.findViewById<ImageView>(R.id.vk_icon).setOnClickListener {
-            val myWebLink = Intent(android.content.Intent.ACTION_VIEW)
-            myWebLink.data = Uri.parse("https://vk.com/amaxasla_nomberone")
-            startActivity(myWebLink)
+            loadPage()
         }
 
         if (savedInstanceState == null) {
@@ -72,11 +70,8 @@ class EmployeeCardFragment : Fragment() {
     }
 
     private fun loadPage() {
-        val socialMedia = requireView().findViewById<TextView>(R.id.social_media)
-        socialMedia.text = employee.socialMedia
-
         val myWebLink = Intent(android.content.Intent.ACTION_VIEW)
-        myWebLink.data = Uri.parse(socialMedia.toString())
+        myWebLink.data = Uri.parse(employee.socialMedia)
         startActivity(myWebLink)
     }
 }
