@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:lines="2"
-        android:text="@string/caption_position_name"
+        android:text="test"
         android:textColor="@color/black"
         android:textSize="@dimen/caption_position"
         android:textStyle="bold"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
-        android:text="@string/user_description"
+        android:text="test"
         android:textSize="@dimen/description_size"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/caption_position" />
