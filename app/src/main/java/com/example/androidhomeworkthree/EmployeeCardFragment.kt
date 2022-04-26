@@ -69,7 +69,14 @@ class EmployeeCardFragment : Fragment() {
         userDescription.text = employee.userDescription
         val phone = requireView().findViewById<TextView>(R.id.phone_number)
         phone.text = employee.phone
+    }
+
+    private fun loadPage() {
         val socialMedia = requireView().findViewById<TextView>(R.id.social_media)
         socialMedia.text = employee.socialMedia
+
+        val myWebLink = Intent(android.content.Intent.ACTION_VIEW)
+        myWebLink.data = Uri.parse(socialMedia.toString())
+        startActivity(myWebLink)
     }
 }
